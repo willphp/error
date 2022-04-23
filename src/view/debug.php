@@ -15,7 +15,7 @@ a:hover{text-decoration:none}
 .error-page-container{position:relative;z-index:1}
 .error-page-main{position:relative;background:#f9f9f9;margin:0 auto;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:25px 30px 30px 30px}
 .error-page-main:before{content:'';display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmkAAAAHCAIAAADcck2GAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACFSURBVHja7NWhDgFxHMDxOxNsNGc22aaZKXZZ5KKX8Fye498VgUJDEq6QCDbdI/zu83mDb/rm1XaXNcBkvXl+8vCZnUu63uvwmYtqdXt3w2eOXufD/hg+c1bOH71x+MzBtz6lFD6zGPbb02UTntLKAADvBADvBADvBADvBADvBAD+/QQYAPeEFhyocrThAAAAAElFTkSuQmCC);height:7px;position:absolute;top:-7px;width:100%;left:0} 
-.error-page-main h3{font-size:24px;color:#333;font-weight:400;padding-bottom:20px;border-bottom:1px dashed #999}
+.error-page-main h3{font-size:24px;color:#a94442;font-weight:400;padding-bottom:20px;border-bottom:1px dashed #999}
 .error-page-main h3 strong{font-size:54px;font-weight:400;margin-right:20px}
 .error-page-head{text-align:right}
 .error-page-head a{font-size:14px;color:#999}

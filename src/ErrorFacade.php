@@ -7,10 +7,10 @@
  | WeChat: www113344
  | Copyright (c) 2020-2022, www.113344.com. All Rights Reserved.
  |-------------------------------------------------------------------------*/
-namespace willphp\log;
+namespace willphp\error;
 use willphp\framework\build\Facade;
 class ErrorFacade extends Facade {
-	public static function getFacadeAccessor() {
+	public static function getFacadeAccessor() {		
 		return 'Error';
 	}
 }

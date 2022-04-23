@@ -140,7 +140,20 @@ class Base {
 			return $res;
 		} 		
 		exit($res);	
-	}
+	}	
+	/**
+	 * 输出403页面
+	 * @return mixed
+	 */
+	public function _403($return = false) {
+		ob_start();
+		include __DIR__.'/../view/403.php';
+		$res = ob_get_clean();
+		if ($return) {
+			return $res;
+		}
+		exit($res);
+	}	
 	/**
 	 * 获取错误标识
 	 * @param $type

@@ -39,7 +39,7 @@ a:hover{text-decoration:none}
 			<h3><strong>404</strong>无法打开页面</h3>			
 			<div class="error-page-body">
 				<p><span class="blue">可能原因:</span></p>
-				<p>1.找不到请求的页面 2.输入的网址不正确 3.网络信号差</p>
+				<p>1.找不到请求的页面 2.输入的网址不正确 3.网络信号不好</p>
 			</div>
 			<div class="error-page-foot">
 				<a href="<?php echo trim('http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']), '/\\');?>" class="green">返回首页</a>
