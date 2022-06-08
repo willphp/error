@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6,strong{font-weight:700}
 a{color:#428bca;text-decoration:none}
 a:hover{text-decoration:none}
 .blue{color:#4288ce}
-.error-page{max-width:580px;padding:10px;margin:60px auto 0;background:#f0f1f3;overflow:hidden;word-break:keep-all;word-wrap:break-word;} 
+.error-page{max-width:680px;padding:10px;margin:60px auto 0;background:#f0f1f3;overflow:hidden;word-break:keep-all;word-wrap:break-word;} 
 .error-page-container{position:relative;z-index:1}
 .error-page-main{position:relative;background:#f9f9f9;margin:0 auto;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:25px 30px 30px 30px}
 .error-page-main:before{content:'';display:block;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmkAAAAHCAIAAADcck2GAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACFSURBVHja7NWhDgFxHMDxOxNsNGc22aaZKXZZ5KKX8Fye498VgUJDEq6QCDbdI/zu83mDb/rm1XaXNcBkvXl+8vCZnUu63uvwmYtqdXt3w2eOXufD/hg+c1bOH71x+MzBtz6lFD6zGPbb02UTntLKAADvBADvBADvBADvBADvBAD+/QQYAPeEFhyocrThAAAAAElFTkSuQmCC);height:7px;position:absolute;top:-7px;width:100%;left:0} 
@@ -35,12 +35,12 @@ a:hover{text-decoration:none}
 <div class="error-page">
     <div class="error-page-container">    	
         <div class="error-page-main">
-        	<div class="error-page-head" style="display:none;"><a href="http://www.113344.com" title="willphp官网" target="_blank">WillPHP</a></div>
-			<h3><strong>:(</strong><?php echo $info['msg']; ?></h3>		
+			<div class="error-page-head" style="display:none;"><a href="http://www.113344.com" title="willphp官网" target="_blank">一鱼PHP框架</a></div>
+			<h3><strong>:(</strong><?php echo $info['type']; ?></h3>			
 			<div class="error-page-body">
-				<p><span class="blue">可能原因:</span></p>
-				<p>可能正在进行更新，请稍候访问。</p>
-			</div>				
+				<p>[<?php echo $info['errno']; ?>]Error in <a href="javascript:;" class="blue" title="<?php echo $info['file']; ?>"><?php echo basename($info['file']); ?></a> line <span class="blue"><?php echo $info['line']; ?></span>:</p>
+				<h4><?php echo $info['error']; ?></h4>
+			</div>
 			<div class="error-page-foot">
 				<a href="<?php echo trim('http://'.$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']), '/\\');?>" class="green">返回首页</a>
 				<a href="javascript:history.back(-1);" class="blue">返回上一页</a>
